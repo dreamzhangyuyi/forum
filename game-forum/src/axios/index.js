@@ -18,6 +18,7 @@ axios.interceptors.request.use(config => {
 })
 
 axios.interceptors.response.use(data => {
+  console.log("data:"+ data)
   return data
 }, error => {
   const errMsg = error.toString()

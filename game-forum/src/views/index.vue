@@ -17,13 +17,9 @@ export default {
   methods: {
     reqTest() {
       reqTest().then(response => {
-        console.log("11111");
-
+        console.log("response:"+response.data.respCode);
       })
     }
   }
 }
 </script>
-
-<style lang="scss" scoped>
-</style>
