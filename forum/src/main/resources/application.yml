@@ -4,7 +4,7 @@ server:
     context-path: /forum
 
 spring:
-  #服务启动后自动执行配置
+  #服务启动后自动执行配置  fang
   web:
     excute-tool: explorer
     isopenurl: true
