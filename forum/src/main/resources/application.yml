@@ -1,11 +1,3 @@
-server:
-  port: 8088
-  servlet:
-    context-path: /forum
-
 spring:
-  #服务启动后自动执行配置
-  web:
-    excute-tool: explorer
-    isopenurl: true
-    open-url: http://localhost:${server.port}/forum/swagger-ui.html
+  profiles:
+    active: local
