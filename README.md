@@ -1,2 +1,2 @@
 # forum
-自制论坛项目
+a forum project developed by springBoot + vue
