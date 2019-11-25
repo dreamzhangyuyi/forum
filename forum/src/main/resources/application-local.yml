@@ -10,6 +10,12 @@ spring:
     username: root
     password: root
 
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    timeout: 1000
+
   #服务启动后自动执行配置
   web:
     excute-tool: explorer
