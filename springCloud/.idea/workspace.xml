@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ec339b1-a45e-4b71-9d33-b2b40877406a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../forum/src/main/java/com/dream/forum/ForumApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../forum/src/main/java/com/dream/forum/ForumApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +28,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -91,7 +95,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -110,12 +114,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580272918711</updated>
-      <workItem from="1580272920202" duration="1922000" />
+      <workItem from="1580272920202" duration="2690000" />
     </task>
+    <task id="LOCAL-00001" summary="springCloud 工程---仅创建了 eurake server和client">
+      <created>1580276420616</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580276420617</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="springCloud 工程---仅创建了 eurake server和client" />
+    <option name="LAST_COMMIT_MESSAGE" value="springCloud 工程---仅创建了 eurake server和client" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Project_Structure" timestamp="1580276250074">
@@ -130,42 +146,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="650" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580275894083" />
-    <state x="540" y="109" key="CommitChangelistDialog2" timestamp="1580276327946">
+    <state x="540" y="109" key="CommitChangelistDialog2" timestamp="1580276415391">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="540" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580276327946" />
-    <state width="1516" height="282" key="GridCell.Tab.0.bottom" timestamp="1580276007915">
+    <state x="540" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580276415391" />
+    <state width="1516" height="282" key="GridCell.Tab.0.bottom" timestamp="1580281025761">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1516" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580276007915" />
-    <state width="1516" height="282" key="GridCell.Tab.0.center" timestamp="1580276007915">
+    <state width="1516" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580281025761" />
+    <state width="1516" height="282" key="GridCell.Tab.0.center" timestamp="1580281025761">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1516" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580276007915" />
-    <state width="1516" height="282" key="GridCell.Tab.0.left" timestamp="1580276007915">
+    <state width="1516" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580281025761" />
+    <state width="1516" height="282" key="GridCell.Tab.0.left" timestamp="1580281025761">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1516" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580276007915" />
-    <state width="1516" height="282" key="GridCell.Tab.0.right" timestamp="1580276007915">
+    <state width="1516" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580281025761" />
+    <state width="1516" height="282" key="GridCell.Tab.0.right" timestamp="1580281025761">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1516" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580276007915" />
-    <state width="1516" height="282" key="GridCell.Tab.1.bottom" timestamp="1580276007916">
+    <state width="1516" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580281025761" />
+    <state width="1516" height="282" key="GridCell.Tab.1.bottom" timestamp="1580281025761">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1516" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580276007916" />
-    <state width="1516" height="282" key="GridCell.Tab.1.center" timestamp="1580276007916">
+    <state width="1516" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580281025761" />
+    <state width="1516" height="282" key="GridCell.Tab.1.center" timestamp="1580281025761">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1516" height="282" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580276007916" />
-    <state width="1516" height="282" key="GridCell.Tab.1.left" timestamp="1580276007915">
+    <state width="1516" height="282" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580281025761" />
+    <state width="1516" height="282" key="GridCell.Tab.1.left" timestamp="1580281025761">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1516" height="282" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580276007915" />
-    <state width="1516" height="282" key="GridCell.Tab.1.right" timestamp="1580276007916">
+    <state width="1516" height="282" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580281025761" />
+    <state width="1516" height="282" key="GridCell.Tab.1.right" timestamp="1580281025761">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1516" height="282" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580276007916" />
+    <state width="1516" height="282" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580281025761" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1580276424918">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580276424918" />
     <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580276260587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

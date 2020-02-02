@@ -7,3 +7,10 @@ export function reqTest() {
     method: 'post',
   })
 }
+
+export function getEpidemicInfo() {
+  return request({
+    url: baseUrl + '/uar/getEpidemicInfo',
+    method: 'post'
+  })
+}
