@@ -21,13 +21,7 @@ axios.interceptors.response.use(data => {
   console.log("data:"+ data)
   return data
 }, error => {
-  const errMsg = error.toString()
-  const code = errMsg.substr(errMsg.indexOf('code') + 5)
-  Message({
-    message: errorCode[code] || errorCode['default'],
-    type: 'error'
-  })
-  return Promise.reject(new Error(error))
+  return Promise.reject(error.response.status+","+error.toString()) 
 })
 
 export default axios

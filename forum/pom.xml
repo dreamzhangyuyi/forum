@@ -36,6 +36,12 @@
             </exclusions>
         </dependency>
 
+        <!--引入AOP依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
         <!-- swagger依赖 -->
         <dependency>
             <groupId>io.springfox</groupId>

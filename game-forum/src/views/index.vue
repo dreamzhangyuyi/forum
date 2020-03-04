@@ -1,30 +1,49 @@
 <template>
-  <div>
-    {{ title }}
-    <el-button @click="getEpidemicInfo">刷新</el-button>
+  <div :class="$style.background">
+    <h3>{{ title }}</h3>
+    <!-- <el-button @click="getEpidemicInfo">刷新</el-button> -->
     <div :class="$style.chinaMap" ref="chinaMap"></div>
     <div :class="$style.chart" ref="chart"></div>
-    <div :class="$style['guageChart']" ref="guageChart"></div>
+    <!-- <div :class="$style['guageChart']" ref="guageChart"></div> -->
   </div>
 </template>
 
 <script>
-import { reqTest,getEpidemicInfo } from "@/api/index";
+import { reqTest, getEpidemicInfo, getDailyInfo } from "@/api/index";
 import "../../static/china.js";
 
 export default {
   data() {
     return {
-      title: "首页",
-      epidemicInfo: []
+      title: "愿每个人平安",
+      epidemicInfo: [],
+      recentDate: [],
+      totalNum: [],
+      suspectNum: []
     };
   },
   created() {
-      this.getEpidemicInfo();
+    this.getEpidemicInfo();
+    this.getDailyInfo();
+  },
+  watch: {
+    epidemicInfo(val) {
+      this.initChinaMap()
+    },
+    recentDate(val) {
+      this.initChart()
+    },
+    totalNum(val) {
+      this.initChart()
+    },
+    suspectNum(val) {
+      this.initChart()
+    }
   },
   mounted() {
-    this.initChart();
-    this.initGuage();
+    // this.initChinaMap()
+    // this.initChart()
+    // this.initGuage();
   },
   methods: {
     reqTest() {
@@ -34,26 +53,46 @@ export default {
     },
     getEpidemicInfo() {
       getEpidemicInfo().then(response => {
-        console.log(response.data.epidemicInfo)
-        this.epidemicInfo = response.data.epidemicInfo
-        console.log(this.epidemicInfo)
-        this.initChinaMap()
-      })
+        this.epidemicInfo = response.data.epidemicInfo;
+        // this.initChinaMap();
+      });
+    },
+    getDailyInfo() {
+      getDailyInfo().then(response => {
+        this.recentDate = response.data.recentDate
+        this.totalNum = response.data.data.total
+        this.suspectNum = response.data.data.suspectNum
+        this.deathNum = response.data.data.deathNum
+        // this.initChart();
+      });
     },
     initChart() {
       let myChart = this.$echarts.init(this.$refs.chart);
       myChart.setOption({
-        title: { text: "在Vue中使用echarts" },
+        title: { text: "每日人数变化" },
         tooltip: {},
         xAxis: {
-          data: ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"]
+          data: this.recentDate
+        },
+        legend: {
+          data: ["每日确诊人数", "每日疑似人数","每日死亡人数"]
         },
         yAxis: {},
         series: [
           {
-            name: "销量",
-            type: "bar",
-            data: [5, 20, 36, 10, 10, 20]
+            name: "每日确诊人数",
+            type: "line",
+            data: this.totalNum
+          },
+          {
+            name: "每日疑似人数",
+            type: "line",
+            data: this.suspectNum
+          },
+          {
+            name: "每日死亡人数",
+            type: "line",
+            data: this.deathNum
           }
         ]
       });
@@ -106,18 +145,18 @@ export default {
         //   text: ["高", "低"],
         //   calculable: true
         // },
-        toolbox: {
-          show: true,
-          orient: "vertical",
-          x: "right",
-          y: "center",
-          feature: {
-            mark: { show: true },
-            dataView: { show: true, readOnly: false },
-            restore: { show: true },
-            saveAsImage: { show: true }
-          }
-        },
+        // toolbox: {
+        //   show: true,
+        //   orient: "vertical",
+        //   x: "right",
+        //   y: "center",
+        //   feature: {
+        //     mark: { show: true },
+        //     dataView: { show: true, readOnly: false },
+        //     restore: { show: true },
+        //     saveAsImage: { show: true }
+        //   }
+        // },
         roamController: {
           show: true,
           x: "right",
@@ -155,16 +194,26 @@ export default {
 </script>
 
 <style module>
+.background {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom right, burlywood, rgb(100,100,0,0.6));
+  /* transition: background-color .5s; */
+  z-index: -1;
+}
 .chart {
-  height: 500px;
+  width: 30vw;
+  height: 40vh;
+  display: inline-block;
 }
 .guageChart {
   width: 400px;
   height: 300px;
 }
 .chinaMap {
-  width: 100vw;
-  height: 100vh;
+  width: 60vw;
+  height: 80vh;
+  display: inline-block;
   /* height: 1000px; */
 }
 </style>

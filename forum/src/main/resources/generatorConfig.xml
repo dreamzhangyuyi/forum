@@ -81,7 +81,7 @@
         </javaClientGenerator>
 
 
-        <table schema="" tableName="tf_b_user" domainObjectName="User"
+        <table schema="" tableName="TF_B_USER" domainObjectName="User"
                enableCountByExample="false"  enableDeleteByExample="false"
                enableSelectByExample="true"  enableUpdateByExample="false" selectByExampleQueryId="false">
         </table>

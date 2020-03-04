@@ -8,7 +8,8 @@ import ElementUI from 'element-ui'
 import axios from './axios/index'
 import store from './store/index'
 import echarts from 'echarts'
-if (process.env.NODE_ENV !== 'production') import('./mock').then(m => m.default)
+import './mock'
+// if (process.env.NODE_ENV !== 'production') import('./mock').then(m => m.default)
 
 Vue.config.productionTip = false
 Vue.prototype.$echarts = echarts

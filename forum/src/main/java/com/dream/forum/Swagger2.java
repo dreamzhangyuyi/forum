@@ -1,4 +1,4 @@
-package com.dream.forum.common.swagger;
+package com.dream.forum;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -38,7 +38,7 @@ public class Swagger2 {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.dream.forum"))
+                .apis(RequestHandlerSelectors.basePackage("com.dream.forum.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }
@@ -51,8 +51,8 @@ public class Swagger2 {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("Forum Restful Apis")//标题
-                .description("API:http://localhost:8080/v2/api-docs \n 更多请关注http://gitlab.gpdd.net")//描述
-                .termsOfServiceUrl("http://gitlab.gpdd.net")
+                .description("API:https://github.com/dreamzhangyuyi/forum/blob/master/README.md/ \n 更多请关注https://github.com/")//描述
+                .termsOfServiceUrl("https://github.com/dreamzhangyuyi/forum")
                 .version("1.0")
                 .build();
     }

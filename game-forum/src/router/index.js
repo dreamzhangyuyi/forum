@@ -6,10 +6,12 @@ import Home from '@/views/index'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
+  // base: '/epidemic/',
   routes: [
     {
-      path: '/',
-      name: '',
+      path: '/epidemic',
+      name: '新型肺炎疫情图',
       component: Home
     }
   ]
